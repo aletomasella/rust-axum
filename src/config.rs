@@ -1,7 +1,7 @@
 use std::env;
 use dotenv::dotenv;
 
-pub mod config {
+
 pub struct Config {
   pub port : u16,
   pub host : String,
@@ -24,9 +24,9 @@ pub fn read_config () -> Config {
     .expect("PORT must be a number");
   let host = env::var("HOST")
     .expect("HOST must be set");
-  Config::new(port, host);
+  Config::new(port, host)
 }
-}
+
 
 
 
