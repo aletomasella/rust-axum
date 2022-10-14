@@ -4,6 +4,7 @@ use serde::{Deserialize};
 pub struct CreateEntryData {
     pub title: String,
     pub date: i64,
+    pub description: String,
 }
 
 #[derive(Deserialize, Clone)]
