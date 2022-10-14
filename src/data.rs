@@ -7,9 +7,9 @@ pub struct AppState {
 
 #[derive(Serialize, Deserialize, Clone)]
 pub struct TodoListEntry {
-    id: u32,
-    title: String,
-    description: String,
+    pub id: u32,
+    pub title: String,
+    pub description: String,
 }
 
 impl TodoListEntry {

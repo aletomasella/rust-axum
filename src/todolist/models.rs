@@ -3,15 +3,13 @@ use serde::{Deserialize};
 #[derive(Deserialize)]
 pub struct CreateEntryData {
     pub title: String,
-    pub date: i64,
     pub description: String,
 }
 
 #[derive(Deserialize, Clone)]
 pub struct UpdateEntryData {
-    pub id: u32,
     pub title: String,
-    pub date: i64,
+    pub description: String,
 }
 
 #[derive(Deserialize)]
