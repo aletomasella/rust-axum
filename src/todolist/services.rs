@@ -1,6 +1,6 @@
-use actix_web::{get, post, put, delete, web, Responder, HttpResponse, App};
+use actix_web::{get, post, put, delete, web, Responder, HttpResponse};
 use crate::data::{TodoListEntry, AppState};
-use super::models::{CreateEntryData, UpdateEntryData, DeleteEntryData, GetEntryData};
+use super::models::{CreateEntryData, UpdateEntryData};
 
 #[get("")]
 async fn index() -> String {
